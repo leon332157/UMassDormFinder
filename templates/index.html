@@ -59,68 +59,30 @@
     <!-- About section-->
     <section id="dorm-list">
       <div class="row">
+        {% for dorm in dormList[:3] %}
         <div class="col text-center">
-          <a href="templates/central.html">
-              <img
-                class="area-pictures"
-                alt="avatar2"
-                src="static/imgs/central.jpeg"
-              />
-          </a>
-          <h3>Central</h3>
-        </div>
-        <div class="col text-center">
-          <a href="templates/ohill.html">
+          <a href="dorm/{{dorm}}">
             <img
-              class="area-pictures shadow-4"
-              alt="avatar2"
-              src="static/imgs/ohill.jpeg"
-            />
-          </a>
-          <h3>Orchard Hill</h3>
+              class="area-pictures"
+              alt="{{dorm}}"
+              src="static/imgs/{{dorm}}.jpeg"
+          /></a>
+          <h3>{{dormDict[dorm]}}</h3>
         </div>
-        <div class="col text-center">
-          <a href="templates/norheast.html">
-            <img
-              class="area-pictures shadow-4"
-              alt="avatar2"
-              src="static/imgs/northeast.jpeg"
-            />
-          </a>
-          <h3>Northeast</h3>
-        </div>
+        {% endfor %}
       </div>
       <div class="row">
+        {% for dorm in dormList[3:] %}
         <div class="col text-center">
-          <a href="templates/southwest.html">
-            <img
-              class="area-pictures shadow-4"
-              alt="avatar2"
-              src="static/imgs/southwest.jpeg"
-            />
-          </a>
-          <h3>Southwest</h3>
+          <a href="dorm/{{dorm}}"
+            ><img
+              class="area-pictures"
+              alt="{{dorm}}"
+              src="static/imgs/{{dorm}}.jpeg"
+          /></a>
+          <h3>{{dormDict[dorm]}}</h3>
         </div>
-        <div class="col text-center">
-          <a href="templates/honors.html">
-            <img
-              class="area-pictures shadow-4"
-              alt="avatar2"
-              src="static/imgs/honors.jpeg"
-            />
-          </a>
-          <h3>Honors</h3>
-        </div>
-        <div class="col text-center">
-          <a href="templates/sylvan.html">
-            <img
-              class="area-pictures shadow-4"
-              alt="avatar2"
-              src="static/imgs/sylvan.jpeg"
-            />
-          </a>
-          <h3>Sylvan</h3>
-        </div>
+        {% endfor %}
       </div>
     </section>
     <!-- Footer-->

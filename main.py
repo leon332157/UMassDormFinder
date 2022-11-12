@@ -1,11 +1,12 @@
 import flask
 from flask import render_template,send_file
 app = flask.Flask(__name__,static_folder = 'static')
-dormList = ["northeast","central","ohill","southwest","honors","sylvan"]
-    
+dormDict = {"northeast":"Northeast","central":"Central","ohill":"Orchard Hill","southwest":"Southwest","honors":"Honors","sylvan":"Sylvan"}
+dormList = list(dormDict.keys())
+
 @app.route('/')
 def index():
-    return send_file("templates/index.html")
+    return render_template('index.html',dormList = dormList,dormDict = dormDict)
 
 @app.route('/preview/<name>')
 def preview(name):
