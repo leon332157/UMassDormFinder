@@ -1,0 +1,42 @@
+/* .rounded-circle{
+border:1px solid;
+border-radius:50%;
+width:50px;
+height:50px;
+} */
+
+.object-fit-cover {
+  width:50px;  
+  height:50px; !important
+  object-fit:cover
+}
+
+.area-pictures {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin:30px;
+    
+}
+.area-pictures:hover {
+    border-radius:40%;
+}
+
+#main-text-container {
+    padding-top: 75px;
+    
+}
+#main-background {
+    background-image:url('/static/imgs/UMass.jpeg'); background-position: center;height:800px;background-size:cover;
+}
+
+.central-background {
+    background-image: url('/static/imgs/central.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#dorm-list {
+    padding: 20px;
+}
