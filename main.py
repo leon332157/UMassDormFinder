@@ -1,7 +1,7 @@
 import flask
 from flask import render_template,send_file
 app = flask.Flask(__name__,static_folder = 'static')
-dormDict = {"northeast":"Northeast","central":"Central","ohill":"Orchard Hill","southwest":"Southwest","honors":"Honors","sylvan":"Sylvan"}
+dormDict = {"northeast":"Northeast","central":"Central","ohill":"Orchard Hill","southwest":"Southwest","honors":"Honors College","sylvan":"Sylvan"}
 dormList = list(dormDict.keys())
 
 @app.route('/')
@@ -16,7 +16,12 @@ def preview(name):
 def dorm(name):
     if name not in dormList:
         return ('Not found',404)
-    return render_template('dorm.html',dormName = name)
+    return render_template('dorm.html',dormName = dormDict[name])
+
+@app.route('/quiz')
+def quiz():
+    return send_file("templates/quiz.html")
+
 #@app.route('/quiz')
 #def quiz():
 #    return render_template("quiz.html")

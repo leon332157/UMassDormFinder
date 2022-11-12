@@ -7,7 +7,7 @@ height:50px;
 
 .object-fit-cover {
   width:50px;  
-  height:50px; !important
+  height:50px !important;
   object-fit:cover
 }
 
@@ -39,4 +39,8 @@ height:50px;
 
 #dorm-list {
     padding: 20px;
+}
+
+.area-names {
+    font-size: 28px;
 }

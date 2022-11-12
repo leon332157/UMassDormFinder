@@ -3937,6 +3937,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: rgb(136, 28, 28);
 }
 
 .nav-link {
@@ -4035,6 +4036,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: rgb(136, 28, 28);
 }
 .navbar > .container,
 .navbar > .container-fluid,
