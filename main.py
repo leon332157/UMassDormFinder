@@ -5,11 +5,7 @@ dormList = ["northeast","central","ohill","southwest","honors","sylvan"]
     
 @app.route('/')
 def index():
-    return send_file("templates/base.html")
-
-@app.route('/index')
-def test():
-    return send_file('templates/index.html')
+    return send_file("templates/index.html")
 
 @app.route('/preview/<name>')
 def preview(name):
@@ -23,4 +19,4 @@ def dorm(name):
 #@app.route('/quiz')
 #def quiz():
 #    return render_template("quiz.html")
-app.run('0.0.0.0',0)
+app.run('0.0.0.0',8888)
