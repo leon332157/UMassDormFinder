@@ -23,7 +23,8 @@ height:50px;
 }
 
 #main-text-container {
-    padding-top: 75px;
+    padding-top: 15rem;
+
     
 }
 #main-background {
@@ -44,3 +45,32 @@ height:50px;
 .area-names {
     font-size: 28px;
 }
+.btn {
+  --bs-btn-border-width: 2px;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(136, 28, 28,0.9);
+  }
+.navbar-brand {
+    color : white;
+}
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-sm,
+  .navbar > .container-md,
+  .navbar > .container-lg,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

@@ -16,7 +16,7 @@ def preview(name):
 def dorm(name):
     if name not in dormList:
         return ('Not found',404)
-    return render_template('dorm.html',dormName = dormDict[name])
+    return render_template('dorm.html',dormName = dormDict[name],dormImage = f"/static/imgs/{name}bg.jpeg")
 
 @app.route('/quiz')
 def quiz():
