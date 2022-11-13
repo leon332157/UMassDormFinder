@@ -133,6 +133,7 @@
                 function getQuizResult() {
                   var result = 0;
                   var dormResult = "";
+                  var dormResultRaw = '';
                   var questions =
                     document.getElementsByClassName("form-select");
                   const YES = "1";
@@ -188,16 +189,21 @@
 
                   if (result >= 8) {
                     dormResult = "Southwest";
+                    dormResultRaw = "southwest";
                   } else if (result >= 6) {
                     dormResult = "Central";
+                    dormResultRaw = "central";
                   } else if (result >= 4) {
                     dormResult = "Orchard Hill";
+                    dormResultRaw = "ohill";
                   } else {
                     dormResult = "Northeast";
+                    dormResultRaw = "northeast";
                   }
                   console.log(result);
                   console.log(dormResult);
                   alert("Your dorm result is " + dormResult);
+                  window.location = window.location + 'dorm' + '/' + dormResultRaw;
                   return result;
                 }
               </script>
