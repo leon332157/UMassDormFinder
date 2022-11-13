@@ -28,10 +28,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-        <a
-          class="navbar-brand display-6 fw-bold"
-          href="#page-top"
-          style="color: white"
+        <a class="navbar-brand display-6 fw-bold" href="#page-top"
           >UMass Dorms</a
         >
       </div>
@@ -265,11 +262,15 @@
         let scrollY = this.scrollY;
         let scrollX = this.scrollX;
         if (scrollY > 80) {
-          document.querySelector(".fade-in").classList.add("active");
+          document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.add("active")});
         } else {
-          document.querySelector(".fade-in").classList.remove("active");
+          document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.remove("active")});
         }
       });
     </script>
+
+    <footer>
+      <p class="text-center text-black">Made with ❤️ @ HackUMass 2022</p>
+    </footer>
   </body>
 </html>

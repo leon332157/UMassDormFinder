@@ -9,10 +9,12 @@
   height: 250px;
   border-radius: 50%;
   margin:30px;
-    
+  transition: 0.1s all ease-in;
+
 }
 .area-pictures:hover {
-    border-radius:40%;
+  border-radius: 45%;
+  box-shadow: 0 0 20px 20px #f1f1f1;
 }
 
 #main-text-container {
@@ -34,16 +36,43 @@
 #dorm-list {
     padding: 15px;
 }
+#review-button {
+  opacity: 0.00;
+	-webkit-transition: 1s all ease-in;
+	-moz-transition: 1s all ease-in;
+	-o-transition:1s all ease-in;
+	transition: 1s all ease-in;
+}
+
+#review-button.active {
+  opacity: 1.00;
+  transition: 0;
+}
+
+#review-container {
+  opacity: 0.00;
+	-webkit-transition: 2s all ease-in;
+	-moz-transition: 2s all ease-in;
+	-o-transition:2s all ease-in;
+	transition: 2s all ease-in;
+}
+
+#review-container.active {
+    opacity: 1.00;
+    
+}
+
 .fade-in {
   opacity: 0.00;
-	-webkit-transition: 1s all ease-in-out;
-	-moz-transition: 1s all ease-in-out;
-	-o-transition:1s all ease-in-out;
-	transition: 1s all ease-in-out;
+	-webkit-transition: 2s all ease-in;
+	-moz-transition: 2s all ease-in;
+	-o-transition:2s all ease-in;
+	transition: 2s all ease-in;
 }
 
 .fade-in.active {
-	opacity: 1.00;
+    opacity: 1.00;
+    
 }
 
 .area-names {
@@ -81,3 +110,7 @@
   .question {
     padding-top: 1rem;
   }
+
+.navbar-brand {
+  --bs-navbar-brand-hover-color: rgb(200, 200, 200);
+}

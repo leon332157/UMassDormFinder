@@ -25,12 +25,6 @@ def dorm(name):
 
     return render_template('dorm.html',dormName = name, dormFriendlyName=dormDict[name], dormImage=f"/static/imgs/{name}bg.jpeg", dormDis=dormDis[name], globalData=GLOBAL_DATA)
 
-
-@app.route('/quiz')
-def quiz():
-    return send_file("templates/quiz.html")
-
-
 @app.route('/photo/<email>')
 def getPhoto(email):
     if email not in GLOBAL_DATA:
@@ -62,7 +56,5 @@ def addRating():
 @app.route('/favicon.ico')
 def favicon():
     return flask.redirect("https://www.umass.edu/sites/default/files/favicons/favicon-32x32.png")
-# @app.route('/quiz')
-# def quiz():
-#    return render_template("quiz.html")
+
 app.run('0.0.0.0', 8888, debug=True)
