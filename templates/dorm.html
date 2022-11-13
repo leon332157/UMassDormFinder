@@ -31,10 +31,12 @@
     }
     #dorm-name-container {
       margin-top: 0rem;
-      padding-top:36vh;
+      padding-top:35vh;
     }
     .dis-container{
-      padding-left: 1rem;
+      padding-left: 0.4rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0;;
     }
     #reviews-container {
       margin-top: 1rem;
@@ -43,7 +45,7 @@
       margin-bottom: 1rem;
     }
     @media (max-width: 600px) {
-     p {
+     li {
         font-size: 0.8rem !important;
      }
     }
@@ -67,24 +69,29 @@
     >
       <div class="container">
         <a class="navbar-brand display-6 fw-bolder" href="/">UMass Dorms</a>
-        <span id = "dorm-name" class="navbar-brand display-6 fw-bold" hidden>{{ dormFriendlyName }}</span>
+        <span id = "dorm-name" class="navbar-brand display-6" hidden>You are browsing {{ dormFriendlyName }}</span>
         </button>
       </div>
     </nav>
-    <section class="bg">
+    <header class="bg">
       <div class="container text-end" id="dorm-name-container">
         <h1 class="fw-bold display-1 "style="color:white;">{{dormFriendlyName}}
           <h1 class="display-1"style="color:white;"> Residential</h1>
         </h1>
       </div>
       <div class="container text-start" style = "padding-top:35vh">
-        <div class="dis-container border-light border-start border-4 rounded-3"></class>
+        <div class="dis-container border-light border-start border-4 rounded-3">
+          <ul>
           {% for line in dormDis.split("\n") %}
-            <p class="lead" style="color:white">{{line}}</p>
+            <li class="lead" style="color:white">{{line}}</li>
           {% endfor %}
+          </ul>
         </div>
       </div>
-    </section>
+    </header>
+    <!--div class = "text-center" style="margin-top: 10px;">
+      <i class="bi bi-arrow-down fs-2 mb-3" >Scroll to Browse Reviews</i>
+    </div-->
     <section id="reviews-container">
       <button type="button" id = "review-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);height: 60;">
         Write a Review!
