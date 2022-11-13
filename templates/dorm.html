@@ -68,7 +68,7 @@
       </div>
     </section>
     <section id="reviews-container" >
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);height: 60;">
         Write a Review!
       </button>
       
@@ -154,7 +154,7 @@
           <h5 class="mb-1">{{value.hall}}</h5>
         </div>
         <p class="mb-1" style="margin-left: 2rem; padding-bottom: 1rem; margin-right: 2rem">{{value.comment}}</p>
-        <small style="margin-left: 2rem; margin-right: 2rem">{{value.rating}}/5</small> 
+        <small style="margin-left: 2rem; margin-right: 2rem">{{value.rating}}/5</small>
         {% if value.photoType == "image/jpeg" or value.photoType == "image/png" %}
         <img src = "/photo/{{key}}" style="height:30%;width:30%;padding:2rem">
         {% endif %}
@@ -182,7 +182,7 @@
       }
       
       function verifyReview() {
-        inputs = [];
+        var inputs = [];
         
         
       }

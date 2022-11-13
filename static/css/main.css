@@ -39,7 +39,18 @@ height:50px;
 }
 
 #dorm-list {
-    padding: 20px;
+    padding: 15px;
+}
+.fade-in {
+  opacity: 0.00;
+	-webkit-transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	-o-transition:1s all ease-in-out;
+	transition: 1s all ease-in-out;
+}
+
+.fade-in.active {
+	opacity: 1.00;
 }
 
 .area-names {

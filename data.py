@@ -9,12 +9,12 @@ Defined Residential Communities: Spectrum Community for Gay, Lesbian, Bisexual, 
 Near Franklin Dining Commons
 Close proximity to the Studio Arts building, Fine Arts Center, University Health Services, Isenberg School of Management""",
 "ohill":"""First-Year Halls: located in: Dickinson and Webster Halls
-Sweets n’ More in Field Hall
-7-minute walk to Franklin or Worcester Dining Commons
+The biggest room on campus after Honors College
+10-minute walk to Franklin or Worcester Dining Commons
 Overlooking campus, amid rolling hills and apple trees
-Daily exercise""",
+Daily exercise for walking up and down the hill""",
 "southwest":"""First-Year Halls: located in Melville, Thoreau, Pierpont , Moore, James, Emerson, Kennedy, and Cance Halls
-Defined Residential Communities": ​Harambee: African Heritage Student Program in Coolidge Hall, El Barrio Community in Washington Hall 
+Defined Residential Communities": "Harambee: African Heritage Student Program in Coolidge Hall, El Barrio Community in Washington Hall 
 Near Berkshire and Hampshire Dining Commons
 Close proximity to Hampden Student Center, Southwest Area Government offices, Boyden Gym, Isenberg School of Management""",
 "honors":"""First Year Halls:  Oak and Sycamore
