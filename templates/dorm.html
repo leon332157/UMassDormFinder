@@ -1,10 +1,30 @@
 <html>
-    <head>
-        <title>{{ dormName }}</title>
-
-    </head>
-    <body>
-        {{ dormName }}
-        
-    </body>
+  <head>
+    <title>{{ dormName }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand display-6" href="/" style="color:white">UMass Dorms</a>
+        </button>
+      </div>
+    </nav>
+    <section>
+      <div class="container-lg border">
+        <div class="row border">
+            <div class="col">
+                <h1 class="fw-bolder display-1 ">{{dormName}}<h1 class="display-1"> Residential Area</h1></h1>
+            </div>
+            <div class="col">
+                <h1 class="fw-bolder display-1 ">{{dormName}}<h1 class="display-1"> Residential Area</h1></h1>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
