@@ -32,6 +32,7 @@
     #dorm-name-container {
       margin-top: 0rem;
       padding-top:35vh;
+      color:white;
     }
     .dis-container{
       padding-left: 0.4rem;
@@ -44,21 +45,34 @@
       justify-content: center;
       margin-bottom: 1rem;
     }
+    #dorm-image{
+      width:40%;padding:1rem
+    }
     @media (max-width: 600px) {
      li {
         font-size: 0.8rem !important;
      }
+     #dorm-image {
+      width: 100%;
+     }
     }
     .fade-in {
   opacity: 0.00;
-	-webkit-transition: 1s all ease-in-out;
-	-moz-transition: 1s all ease-in-out;
-	-o-transition:1s all ease-in-out;
 	transition: 1s all ease-in-out;
 }
 
 .fade-in.active {
 	opacity: 1.00;
+}
+#review-button {
+  background-color: rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);height: 60;/*transition: 1s all ease-in;*/
+}
+#review-button:hover {
+  background-color: rgba(242, 67, 67, 0.9);
+}
+
+#review-button.active {
+  opacity: 1.00;
 }
     </style>
   </head>
@@ -70,13 +84,12 @@
       <div class="container">
         <a class="navbar-brand display-6 fw-bolder" href="/">UMass Dorms</a>
         <span id = "dorm-name" class="navbar-brand display-6" hidden>You are browsing {{ dormFriendlyName }}</span>
-        </button>
       </div>
     </nav>
     <header class="bg">
       <div class="container text-end" id="dorm-name-container">
-        <h1 class="fw-bold display-1 "style="color:white;">{{dormFriendlyName}}
-          <h1 class="display-1"style="color:white;"> Residential</h1>
+        <h1 class="fw-bold display-1 ">{{dormFriendlyName}}
+          <h1 class="display-1"> Residential</h1>
         </h1>
       </div>
       <div class="container text-start" style = "padding-top:35vh">
@@ -93,7 +106,7 @@
       <i class="bi bi-arrow-down fs-2 mb-3" >Scroll to Browse Reviews</i>
     </div-->
     <section id="reviews-container">
-      <button type="button" id = "review-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);height: 60;">
+      <button type="button" id = "review-button" class="btn btn-primary fade-in" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Write a Review!
       </button>
       
@@ -162,7 +175,6 @@
                 <!--label class="input-group-text" for="inputGroupFile01">Upload</!--label-->
               </div>
             
-            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type = "submit" class="btn btn-primary" style="background-color:rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9);">Submit Review</button>
@@ -190,7 +202,7 @@
         {% endfor %}
         </div>
         {% if value.photoType == "image/jpeg" or value.photoType == "image/png" %}
-        <img src = "/photo/{{key}}" style="width:40%;padding:1rem">
+        <img id = "dorm-image" src = "/photo/{{key}}">
         {% endif %}
         
       </div>  
@@ -209,8 +221,10 @@
       }
       if (scrollY > 75) {
           document.querySelector("#review-button").classList.add("active")
+          document.querySelector("#review-button").style.transitionDuration = "0.3s";
         } else {
           document.querySelector("#review-button").classList.remove("active")
+          //document.querySelector("#review-button").classList.add("fade-in")
           //document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.remove("active")});
         }
       console.log(scrollY);

@@ -36,18 +36,7 @@
 #dorm-list {
     padding: 15px;
 }
-#review-button {
-  opacity: 0.00;
-	-webkit-transition: 1s all ease-in;
-	-moz-transition: 1s all ease-in;
-	-o-transition:1s all ease-in;
-	transition: 1s all ease-in;
-}
 
-#review-button.active {
-  opacity: 1.00;
-  transition: 0;
-}
 
 #review-container {
   opacity: 0.00;

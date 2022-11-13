@@ -268,8 +268,10 @@
         let scrollX = this.scrollX;
         if (scrollY > 80) {
           document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.add("active")});
+          //document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.remove("fade-in")});
         } else {
           document.querySelectorAll(".fade-in").forEach((elem)=>{elem.classList.remove("active")});
+          //document.querySelectorAll(".active").forEach((elem)=>{elem.classList.add("fade-in")});
         }
       });
     </script>
