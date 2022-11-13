@@ -9,9 +9,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Welcome to UMass Dorms</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.umass.edu/sites/default/files/favicons/favicon-32x32.png">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/static/css/styls.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="/static/css/main.css" rel="stylesheet" />
   </head>
@@ -23,19 +22,6 @@
     >
       <div class="container">
         <a class="navbar-brand display-6 fw-bold" href="#page-top" style="color:white">UMass Dorms</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!--ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul-->
-        </div>
       </div>
     </nav>
     <!-- Header-->
@@ -43,7 +29,69 @@
       <div class="container px-4 text-center" id="main-text-container">
         <h1 class="display-1">Welcome to <h1 class="title fw-bolder display-1">UMass Dorms</h1></h1>
         <p class="lead">Need help picking a residential area?</p>
-        <a class="btn btn-lg btn-light" href="#about" style="background-color:rgb(136, 28, 28); color:white; ">Take a Short Quiz</a>
+        <!--a class="btn btn-lg btn-light" href="#about" style="background-color:rgb(136, 28, 28); color:white; ">Take a Short Quiz</a-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:rgb(136, 28, 28); color:white; border-color: white">
+          Take a Short Quiz
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:black">Residential Area Quiz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="color: black; text-align: left">
+                <p>1. Do you mind if your dorm is noisy and loud?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">Sometimes</option>
+                </select>
+                <p class="question">2. Do you like to party?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">Sometimes</option>
+                  <option value="4">With my friends</option>
+                </select>
+                <p class="question">3. Do you mind walking up a hill?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">I don't care</option>
+                </select>
+                <p class="question">4. Do you plan on staying in your dorm a lot to do homework and study?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">Sometimes</option>
+                </select>
+                <p class="question">5. Do you want a walk-in closet?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">I don't care</option>
+                </select>
+                <p class="question">6. Are you majoring in Computer Science, Informatics, or Engineering?</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Choose your answer</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">Maybe</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" style="background-color:rgba(136, 28, 28,0.9); border-color:rgba(136, 28, 28,0.9)">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Area Selection -->

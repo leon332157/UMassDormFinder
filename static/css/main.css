@@ -73,4 +73,7 @@ height:50px;
     align-items: center;
     justify-content: space-between;
   }
-  
+
+  .question {
+    padding-top: 1rem;
+  }
