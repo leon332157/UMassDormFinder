@@ -2,18 +2,9 @@ import flask
 from flask import render_template, send_file
 import json
 from data import *
-from werkzeug.utils import secure_filename
 import base64
-from flask_compress import Compress
 
 app = flask.Flask(__name__, static_folder='static')
-#Compress(app)
-app.config['COMPRESS_MIMETYPES'] = ['text/html', 'text/css', 'text/xml',
-                                    'application/json', 'application/javascript', 'image/jpeg', 'image/png', 'image/jpg']
-app.config['COMPRESS_LEVEL'] = 9
-app.config['COMPRESS_MIN_SIZE'] = 10240
-app.config['COMPRESS_BR_LEVEL'] = 11
-app.config["COMPRESS_ALGORITHM"] = ["br", "gzip"]
 GLOBAL_DATA = json.load(open("data.json"))
 
 
