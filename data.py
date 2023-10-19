@@ -1,3 +1,5 @@
+# Database
+
 dormDict = {"northeast":"Northeast","central":"Central","ohill":"Orchard Hill","southwest":"Southwest","honors":"Honors College","sylvan":"Sylvan"}
 dormList = list(dormDict.keys())
 dormDis = {"northeast":"""First Year Halls: located in Crabtree, Dwight, Hamlin, Leach, Mary Lyon and Knowlton
