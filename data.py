@@ -1,4 +1,4 @@
-# Database
+# Database with data
 
 dormDict = {"northeast":"Northeast","central":"Central","ohill":"Orchard Hill","southwest":"Southwest","honors":"Honors College","sylvan":"Sylvan"}
 dormList = list(dormDict.keys())
