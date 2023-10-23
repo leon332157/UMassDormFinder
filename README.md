@@ -4,12 +4,14 @@ UMass DormFinder is a web application designed to assist prospective and current
 
 ## Table of Contents
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [UMass DormFinder](#umass-dormfinder)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Features
 
@@ -25,15 +27,14 @@ UMass DormFinder offers a range of features to help students make informed decis
 
 UMass DormFinder was developed using the following technologies:
 
-- HTML
-- CSS
+- HTML,JS,CSS
 - Bootstrap Framework
 - Python
 - Flask
 
 ## Getting Started
 
-To get started with UMass DormFinder, you can simply visit the website at [umassdormfinder.pages.dev](#). There's no need to install any software or set up a local environment; the application is entirely web-based and accessible from any modern web browser.
+To get started with UMass DormFinder, you can simply visit the website at [here](https://umass-dorm-finder.onrender.com). There's no need to install any software or set up a local environment; the application is entirely web-based and accessible from any modern web browser.
 
 ## Usage
 
